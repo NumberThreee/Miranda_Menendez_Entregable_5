@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acceso Administrador - CONAE</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="logo">
+      <a href="#">
+        <img src="images/conae_logo_2.png" alt="Logo CONAE" class="site-logo">
+      </a>
+    </div>
+    <nav class="main-nav">
+      <ul class="nav-links">
+        <li class="menu-desplegable">
+          <a href="#" class="boton-desplegable">ESPACIO EXTERIOR</a>
+          <div class="contenido-desplegable">
+            <a href="#">Acceso al Espacio</a>
+            <a href="#">Misiones</a>
+            <a href="#">Noticias</a>
+          </div>
+        </li>
+        <li class="menu-desplegable">
+          <a href="#" class="boton-desplegable">RECURSOS</a>
+          <div class="contenido-desplegable">
+            <a href="#">Plan Espacial</a>
+            <a href="#">Aplicaciones</a>
+            <a href="#">Productos Saocom</a>
+            <a href="#">Servicios</a>
+            <a href="#">Educacion y Capacitacion</a>
+          </div>
+        </li>
+        <li><a href="#" class="live-btn">LIVE <span class="dot"></span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Formulario de login -->
+  <section class="seccion-contenido" style="padding-top: 120px;">
+    <h2>Acceso Administrador</h2>
+    <form style="max-width: 400px; margin: 30px auto; background-color: #1f1f1f; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.5);">
+      <label for="usuario">Usuario</label>
+      <input type="text" id="usuario" name="usuario" required style="width: 100%; padding: 10px; margin-bottom: 20px;">
+
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" name="password" required style="width: 100%; padding: 10px; margin-bottom: 30px;">
+
+      <button type="submit" class="btn-primary" style="width: 100%;">Ingresar</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Conae. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

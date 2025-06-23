@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noticias - CONAE</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="logo">
+      <a href="#">
+        <img src="images/conae_logo_2.png" alt="Logo CONAE" class="site-logo">
+      </a>
+    </div>
+    <nav class="main-nav">
+      <ul class="nav-links">
+        <li class="menu-desplegable">
+          <a href="#" class="boton-desplegable">ESPACIO EXTERIOR</a>
+          <div class="contenido-desplegable">
+            <a href="#">Acceso al Espacio</a>
+            <a href="#">Misiones</a>
+            <a href="#">Noticias</a>
+          </div>
+        </li>
+        <li class="menu-desplegable">
+          <a href="#" class="boton-desplegable">RECURSOS</a>
+          <div class="contenido-desplegable">
+            <a href="#">Plan Espacial</a>
+            <a href="#">Aplicaciones</a>
+            <a href="#">Productos Saocom</a>
+            <a href="#">Servicios</a>
+            <a href="#">Educacion y Capacitacion</a>
+          </div>
+        </li>
+        <li><a href="#" class="live-btn">LIVE <span class="dot"></span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Carrusel de noticias destacadas -->
+  <section class="seccion-contenido" style="padding-top: 120px;">
+    <h2>Noticias destacadas</h2>
+    <div style="max-width: 800px; margin: 0 auto 40px auto; position: relative;">
+      <div style="background-color: #222; padding: 40px 20px; border-radius: 8px; text-align: center;">
+        <h3>Título de noticia</h3>
+        <p>Descripción breve de la noticia destacada...</p>
+        <a href="#" class="btn-primary" style="margin-top: 20px; display: inline-block;">Ver más</a>
+      </div>
+      <!-- Puntos del carrusel -->
+      <div style="margin-top: 20px; text-align: center;">
+        <span style="color: gray;">●</span>
+        <span style="color: gray;">●</span>
+        <span style="color: gray;">●</span>
+        <span style="color: white;">●</span>
+      </div>
+    </div>
+
+    <!-- Buscador -->
+    <div style="max-width: 600px; margin: 0 auto 40px auto;">
+      <input type="text" placeholder="Buscar noticias..." style="width: 100%; padding: 10px; border-radius: 5px;">
+    </div>
+
+    <!-- Grid de noticias -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; padding-bottom: 50px;">
+      <div>
+        <img src="images/noticia1.jpg" alt="Noticia 1" style="width: 100%; border-radius: 8px;">
+        <h4 style="margin-top: 10px;">Título 1</h4>
+      </div>
+      <div>
+        <img src="images/noticia2.jpg" alt="Noticia 2" style="width: 100%; border-radius: 8px;">
+        <h4 style="margin-top: 10px;">Título 2</h4>
+      </div>
+      <div>
+        <img src="images/noticia3.jpg" alt="Noticia 3" style="width: 100%; border-radius: 8px;">
+        <h4 style="margin-top: 10px;">Título 3</h4>
+      </div>
+      <div>
+        <img src="images/noticia4.jpg" alt="Noticia 4" style="width: 100%; border-radius: 8px;">
+        <h4 style="margin-top: 10px;">Título 4</h4>
+      </div>
+      <div>
+        <img src="images/noticia5.jpg" alt="Noticia 5" style="width: 100%; border-radius: 8px;">
+        <h4 style="margin-top: 10px;">Título 5</h4>
+      </div>
+      <div>
+        <img src="images/noticia6.jpg" alt="Noticia 6" style="width: 100%; border-radius: 8px;">
+        <h4 style="margin-top: 10px;">Título 6</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Conae. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
