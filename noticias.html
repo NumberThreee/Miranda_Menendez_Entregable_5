@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Noticias - CONAE</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="estilo.css" />
 </head>
 <body>
 
@@ -12,7 +12,7 @@
   <header class="main-header">
     <div class="logo">
       <a href="#">
-        <img src="images/conae_logo_2.png" alt="Logo CONAE" class="site-logo">
+        <img src="images2/conae_logo_2.png" alt="Logo CONAE" class="site-logo">
       </a>
     </div>
     <nav class="main-nav">
@@ -40,8 +40,9 @@
     </nav>
   </header>
 
- <!-- Carrusel de noticias destacadas -->
-<section class="seccion-contenido carrusel-section">
+ <!-- Noticias -->
+<section class="seccion-contenido">
+  <!-- Carrusel de noticias destacadas -->
   <h2>Noticias destacadas</h2>
   <div id="carrusel" class="carrusel">
     <div id="slide" class="carrusel-slide">
@@ -55,17 +56,17 @@
     <button id="prev" class="carrusel-btn carrusel-btn-prev">◀</button>
     <button id="next" class="carrusel-btn carrusel-btn-next">▶</button>
   </div>
+
+  <!-- Buscador -->
+<div style="max-width: 600px; margin: 0 auto 40px auto;">
+  <input type="text" id="buscador" placeholder="Buscar noticias..." style="width: 100%; padding: 10px; border-radius: 5px;">
+</div>
+
+
+  <!-- Noticias dinámicas desde JSON -->
+  <div id="contenedor-noticias" class="grid-noticias"></div>
 </section>
 
-
-    <!-- Buscador -->
-    <div style="max-width: 600px; margin: 0 auto 40px auto;">
-      <input type="text" placeholder="Buscar noticias..." style="width: 100%; padding: 10px; border-radius: 5px;">
-    </div>
-
-    <!-- Noticias dinámicas desde JSON -->
-    <div id="contenedor-noticias" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; padding-bottom: 50px;"></div>
-  </section>
 
   <!-- Footer -->
   <footer>

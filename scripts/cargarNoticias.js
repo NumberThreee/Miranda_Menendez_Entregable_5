@@ -13,3 +13,33 @@ fetch('noticias.json')
       contenedor.appendChild(div);
     });
   });
+
+  function filtrarNoticias() {
+  const filtro = document.getElementById("buscador").value.toLowerCase();
+  const tarjetas = document.querySelectorAll("#contenedor-noticias > div");
+
+  tarjetas.forEach((tarjeta) => {
+    const titulo = tarjeta.querySelector("h4").textContent.toLowerCase();
+    const descripcion = tarjeta.querySelector("p").textContent.toLowerCase();
+
+    if (titulo.includes(filtro) || descripcion.includes(filtro)) {
+      tarjeta.style.display = "block";
+    } else {
+      tarjeta.style.display = "none";
+    }
+  });
+}
+
+// Función debounce para retrasar ejecución
+function debounce(func, delay) {
+  let timeout;
+  return () => {
+    clearTimeout(timeout);
+    timeout = setTimeout(func, delay);
+  };
+}
+
+// Activar filtro con debounce de 300ms
+const buscador = document.getElementById("buscador");
+buscador.addEventListener("input", debounce(filtrarNoticias, 300));
+

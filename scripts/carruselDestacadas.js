@@ -3,19 +3,19 @@ const destacadas = [
     id: 1,
     titulo: "Convocatoria Maestría en Aplicaciones de Información Espacial",
     descripcion: "Postulate a la maestría en conjunto con la UNSAM.",
-    imagen: "images/maestria.png"
+    imagen: "images2/maestria.png"
   },
   {
     id: 2,
     titulo: "Microsatélite ATENEA en misión Artemis II",
     descripcion: "Participación histórica de Argentina en misión tripulada de la NASA.",
-    imagen: "images/atenea.png"
+    imagen: "images2/atenea.png"
   },
   {
     id: 5,
     titulo: "Calendario Institucional 2025 lanzado",
     descripcion: "Imágenes satelitales de las 23 provincias en un calendario único.",
-    imagen: "images/calendario_2025.png"
+    imagen: "images2/calendario_2025.png"
   }
 ];
 
