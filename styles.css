@@ -163,18 +163,28 @@ ul {
     display: block;
 }
 
+.seccion-principal .contenido-principal,
+.seccion-destacados,
+.seccion-tres-columnas {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
 .seccion-principal {
     position: relative;
     width: 100%;
     height: 100vh;
     background: url('images/argentino-espacio-nasa.webp') no-repeat center center/cover;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     color: var(--color-texto-claro);
     padding-top: 80px;
-    padding-left: 5%;
-    padding-right: 5%;
+    margin-bottom: 100px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .seccion-principal::before {
@@ -192,7 +202,9 @@ ul {
     position: relative;
     z-index: 1;
     max-width: 600px;
-    padding: 20px 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: left;
 }
 
@@ -220,34 +232,24 @@ ul {
     background-color: var(--color-hover);
 }
 
-.seccion-contenido {
-    padding: 50px 5%;
-    background-color: var(--color-fondo-principal);
-    color: var(--color-texto-oscuro);
-    text-align: center;
-}
-
-.seccion-contenido h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: var(--color-resaltado);
-}
-
 .seccion-destacados {
-    padding: 50px 5%;
     background-color: var(--color-fondo-principal);
     color: var(--color-texto-oscuro);
     display: flex;
     flex-direction: column;
     gap: 100px;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .destacado-item {
     display: flex;
     align-items: center;
-    max-width: 1400px;
     width: 100%;
+    max-width: 100%;
 }
 
 .imagen-destacado {
@@ -315,11 +317,107 @@ ul {
     margin-right: 0;
 }
 
-footer {
+.seccion-tres-columnas {
+    background-color: var(--color-fondo-principal);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.columna-item {
+    flex-basis: calc(33.33% - 20px);
+    max-width: 350px;
+    text-align: center;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.columna-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 0;
+    margin-bottom: 15px;
+}
+
+.columna-item h3 {
+    font-size: 1.3em;
+    color: var(--color-texto-oscuro);
+    margin-top: 0;
+}
+
+/* --- Nuevos estilos para el footer --- */
+.main-footer {
     background-color: #000000;
     color: var(--color-texto-claro);
+    padding: 40px 5%; /* Aumentado el padding para más espacio */
     text-align: center;
-    padding: 20px 5%;
+}
+
+.main-footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    gap: 20px; /* Espacio entre los bloques del footer */
+}
+
+.main-footer .footer-links {
+    display: flex;
+    gap: 30px;
+}
+
+.main-footer .footer-links a {
+    color: var(--color-texto-claro);
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.main-footer .footer-links a:hover {
+    color: var(--color-resaltado);
+}
+
+.main-footer .footer-social {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.main-footer .footer-social span {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.main-footer .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.main-footer .social-icons img {
+    width: 28px; /* Tamaño de los iconos */
+    height: 28px;
+    transition: transform 0.2s ease;
+}
+
+.main-footer .social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.main-footer .footer-bottom {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 0.9em;
 }
 
@@ -329,6 +427,7 @@ footer {
         align-items: flex-start;
         height: auto;
         padding-bottom: 10px;
+        padding: 0 5%;
     }
 
     .main-nav {
@@ -366,25 +465,36 @@ footer {
         background-color: var(--color-fondo-oscuro);
     }
 
+    .seccion-principal,
+    .seccion-destacados,
+    .seccion-tres-columnas {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+        box-sizing: border-box;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
     .seccion-principal {
         padding-top: 120px;
-        height: auto;
-        min-height: 70vh;
         justify-content: center;
         text-align: center;
+        margin-bottom: 60px;
     }
 
-    .contenido-principal {
-        padding: 20px;
+    .seccion-principal .contenido-principal {
         text-align: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .contenido-principal h1 {
-        font-size: 2.5em;
-    }
-
-    .contenido-principal p {
-        font-size: 1em;
+    .seccion-destacados {
+        align-items: center;
     }
 
     .destacado-item {
@@ -410,5 +520,34 @@ footer {
     .destacado-item.izquierda .btn-destacado {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .seccion-tres-columnas {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .columna-item {
+        flex-basis: 90%;
+        max-width: 400px;
+    }
+
+    .main-footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-footer .footer-links {
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .main-footer .footer-social {
+        flex-direction: column;
+        margin-bottom: 20px;
+        gap: 10px;
     }
 }
