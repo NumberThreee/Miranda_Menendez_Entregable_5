@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noticias - CONAE</title>
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="logo">
+      <a href="#">
+        <img src="images2/conae_logo_2.png" alt="Logo CONAE" class="site-logo">
+      </a>
+    </div>
+    <nav class="main-nav">
+      <ul class="nav-links">
+        <li class="menu-desplegable">
+          <a href="#" class="boton-desplegable">ESPACIO EXTERIOR</a>
+          <div class="contenido-desplegable">
+            <a href="#">Acceso al Espacio</a>
+            <a href="#">Misiones</a>
+            <a href="#">Noticias</a>
+          </div>
+        </li>
+        <li class="menu-desplegable">
+          <a href="#" class="boton-desplegable">RECURSOS</a>
+          <div class="contenido-desplegable">
+            <a href="#">Plan Espacial</a>
+            <a href="#">Aplicaciones</a>
+            <a href="#">Productos Saocom</a>
+            <a href="#">Servicios</a>
+            <a href="#">Educacion y Capacitacion</a>
+          </div>
+        </li>
+        <li><a href="#" class="live-btn">LIVE <span class="dot"></span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+ <!-- Noticias -->
+<section class="seccion-contenido">
+  <!-- Carrusel de noticias destacadas -->
+  <h2>Noticias destacadas</h2>
+  <div id="carrusel" class="carrusel">
+    <div id="slide" class="carrusel-slide">
+      <div class="carrusel-overlay"></div>
+      <div class="carrusel-contenido">
+        <h3 id="carrusel-titulo"></h3>
+        <p id="carrusel-descripcion"></p>
+        <a id="carrusel-boton" href="#" class="btn-primary">Ver más</a>
+      </div>
+    </div>
+    <button id="prev" class="carrusel-btn carrusel-btn-prev">◀</button>
+    <button id="next" class="carrusel-btn carrusel-btn-next">▶</button>
+  </div>
+
+  <!-- Buscador -->
+<div style="max-width: 600px; margin: 0 auto 40px auto;">
+  <input type="text" id="buscador" placeholder="Buscar noticias..." style="width: 100%; padding: 10px; border-radius: 5px;">
+</div>
+
+
+  <!-- Noticias dinámicas desde JSON -->
+  <div id="contenedor-noticias" class="grid-noticias"></div>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Conae. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Script que carga las noticias -->
+  <script src="scripts/cargarNoticias.js"></script>
+  <script src="scripts/carruselDestacadas.js"></script>
+</body>
+</html>
