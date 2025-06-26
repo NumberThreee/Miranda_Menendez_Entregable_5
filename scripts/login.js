@@ -34,6 +34,4 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
 
   mensaje.textContent = `Bienvenido ${usuario}`;
   mensaje.className = "login-mensaje success";
-  // Si querés redirigir después de unos segundos:
-  // setTimeout(() => window.location.href = "noticias.html", 2000);
 });

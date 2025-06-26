@@ -30,7 +30,6 @@ fetch('noticias.json')
   });
 }
 
-// Función debounce para retrasar ejecución
 function debounce(func, delay) {
   let timeout;
   return () => {
@@ -39,7 +38,6 @@ function debounce(func, delay) {
   };
 }
 
-// Activar filtro con debounce de 300ms
 const buscador = document.getElementById("buscador");
 buscador.addEventListener("input", debounce(filtrarNoticias, 300));
 

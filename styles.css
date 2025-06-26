@@ -355,11 +355,11 @@ ul {
     margin-top: 0;
 }
 
-/* --- Nuevos estilos para el footer --- */
+
 .main-footer {
     background-color: #000000;
     color: var(--color-texto-claro);
-    padding: 40px 5%; /* Aumentado el padding para más espacio */
+    padding: 40px 5%; 
     text-align: center;
 }
 
@@ -369,8 +369,8 @@ ul {
     align-items: center;
     max-width: 1400px;
     margin: 0 auto;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
-    gap: 20px; /* Espacio entre los bloques del footer */
+    flex-wrap: wrap; 
+    gap: 20px; 
 }
 
 .main-footer .footer-links {
@@ -405,7 +405,7 @@ ul {
 }
 
 .main-footer .social-icons img {
-    width: 28px; /* Tamaño de los iconos */
+    width: 28px; 
     height: 28px;
     transition: transform 0.2s ease;
 }

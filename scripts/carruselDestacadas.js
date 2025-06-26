@@ -25,12 +25,12 @@ function mostrarSlide(i) {
   const noticia = destacadas[i];
   const slide = document.getElementById('slide');
 
-  // Cargar contenido
+  
   document.getElementById('carrusel-titulo').textContent = noticia.titulo;
   document.getElementById('carrusel-descripcion').textContent = noticia.descripcion;
   document.getElementById('carrusel-boton').href = `noticia.html?id=${noticia.id}`;
 
-  // Cambiar imagen de fondo
+  
   slide.style.backgroundImage = `url('${noticia.imagen}')`;
 }
 
@@ -44,11 +44,11 @@ document.getElementById('next').addEventListener('click', () => {
   mostrarSlide(index);
 });
 
-// Auto-rotación
+
 setInterval(() => {
   index = (index + 1) % destacadas.length;
   mostrarSlide(index);
 }, 7000);
 
-// Inicializar
+
 mostrarSlide(index);
