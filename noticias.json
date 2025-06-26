@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "titulo": "Convocatoria Maestría en Aplicaciones de Información Espacial",
+    "descripcion": "10 de junio de 2025 – La CONAE lanzó una nueva convocatoria.",
+    "contenido": "La Comisión Nacional de Actividades Espaciales (CONAE), junto con el Instituto de Altos Estudios Espaciales “Mario Gulich”, convoca a profesionales de diversas disciplinas a postularse para la Maestría en Aplicaciones de Información Espacial.",
+    "imagen": "images/maestria.png"
+  },
+  {
+    "id": 2,
+    "titulo": "Microsatélite ATENEA en misión Artemis II",
+    "descripcion": "27 de mayo de 2025 – ATENEA se incorporará a Artemis II.",
+    "contenido": "El microsatélite argentino ATENEA será parte de la misión tripulada Artemis II de la NASA, una colaboración que marca un hito para nuestra investigación espacial.",
+    "imagen": "images/atenea.png"
+  },
+  {
+    "id": 3,
+    "titulo": "Curso virtual sobre uso de imágenes satelitales",
+    "descripcion": "28 de abril de 2025 – Abierta la inscripción.",
+    "contenido": "La CONAE abre inscripción para el curso introductorio de Teledetección Óptica, destinado a personas con formación técnica interesadas en el uso de imágenes satelitales.",
+    "imagen": "images/curso_virtual.png"
+  },
+  {
+    "id": 4,
+    "titulo": "Patrocinio al 13° Congreso Argentino de Tecnología Espacial",
+    "descripcion": "15 de abril de 2025 – La CONAE fue sponsor.",
+    "contenido": "Con más de 150 ponencias y 300 participantes, la CONAE patrocinó el 13° Congreso Argentino de Tecnología Espacial, apoyando el desarrollo de la comunidad científica y tecnológica.",
+    "imagen": "images/congreso_espacial.jpg"
+  },
+  {
+    "id": 5,
+    "titulo": "Calendario Institucional 2025 lanzado",
+    "descripcion": "26 de diciembre de 2024 – Visitas satelitales mensuales.",
+    "contenido": "La CONAE presentó el Calendario Institucional 2025 con imágenes satelitales de las 23 provincias, mostrando capacidades tecnológicas y misiones espaciales de Argentina.",
+    "imagen": "images/calendario_2025.png"
+  },
+  {
+    "id": 6,
+    "titulo": "Finalizó la 20ª edición de SERESSA 2024",
+    "descripcion": "10 de diciembre de 2024 – Escuela internacional completada.",
+    "contenido": "La escuela internacional SERESSA 2024 se realizó en el Centro Espacial Teófilo Tabanera, con la participación de más de 60 estudiantes y profesionales.",
+    "imagen": "images/seressa2024.png"
+  },
+  {
+    "id": 7,
+    "titulo": "Capacitación internacional en tecnología radar",
+    "descripcion": "24 de octubre de 2024 – Teledetección forestal.",
+    "contenido": "La 8va Escuela de Primavera en tecnología radar reunió expertos de América Latina y Europa para analizar el uso de satélites en el monitoreo forestal.",
+    "imagen": "images/radar.png"
+  },
+  {
+    "id": 8,
+    "titulo": "Monitoreo satelital de incendios en Córdoba y San Luis",
+    "descripcion": "10 de octubre de 2024 – Incendios monitoreados.",
+    "contenido": "La CONAE elaboró productos satelitales detallando las áreas afectadas por los incendios en Córdoba y San Luis, apoyando la respuesta ante emergencias.",
+    "imagen": "images/incendios.png"
+  },
+  {
+    "id": 9,
+    "titulo": "Segundo encuentro del Sector Espacial Argentino",
+    "descripcion": "18 de septiembre de 2024 – Mesa de trabajo realizada.",
+    "contenido": "Se llevó a cabo el segundo encuentro del Sector Espacial Argentino, con participación de funcionarios, empresas e investigadores.",
+    "imagen": "images/encuentro_sector.jpg"
+  },
+  {
+    "id": 10,
+    "titulo": "Argentina sede de SERESSA 2024",
+    "descripcion": "07 de agosto de 2024 – Próxima escuela confirmada.",
+    "contenido": "Argentina fue seleccionada como sede de la 20ª Escuela Internacional sobre Radiación en Sistemas Embebidos (SERESSA 2024), un evento clave para la comunidad espacial.",
+    "imagen": "images/seressa_sede.png"
+  }
+]

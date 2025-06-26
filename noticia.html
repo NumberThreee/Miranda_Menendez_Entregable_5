@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Noticias - CONAE</title>
+  <title>Noticia - CONAE</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -40,31 +40,18 @@
     </nav>
   </header>
 
- <!-- Carrusel de noticias destacadas -->
-<section class="seccion-contenido carrusel-section">
-  <h2>Noticias destacadas</h2>
-  <div id="carrusel" class="carrusel">
-    <div id="slide" class="carrusel-slide">
-      <div class="carrusel-overlay"></div>
-      <div class="carrusel-contenido">
-        <h3 id="carrusel-titulo"></h3>
-        <p id="carrusel-descripcion"></p>
-        <a id="carrusel-boton" href="#" class="btn-primary">Ver más</a>
-      </div>
+  <!-- Contenido de la noticia -->
+  <section class="seccion-contenido" style="padding-top: 120px;">
+    <div style="max-width: 800px; margin: 0 auto; text-align: left;">
+      <h2 id="titulo" style="margin-bottom: 20px;"></h2>
+      <img id="imagen" src="" alt="" style="width: 100%; border-radius: 8px; margin-bottom: 20px;">
+      <p id="contenido" style="font-size: 1.1em;"></p>
+
+      <div style="margin-top: 40px; text-align: center;">
+  <a href="noticias.html" class="btn-primary">← Volver a noticias</a>
+</div>
+
     </div>
-    <button id="prev" class="carrusel-btn carrusel-btn-prev">◀</button>
-    <button id="next" class="carrusel-btn carrusel-btn-next">▶</button>
-  </div>
-</section>
-
-
-    <!-- Buscador -->
-    <div style="max-width: 600px; margin: 0 auto 40px auto;">
-      <input type="text" placeholder="Buscar noticias..." style="width: 100%; padding: 10px; border-radius: 5px;">
-    </div>
-
-    <!-- Noticias dinámicas desde JSON -->
-    <div id="contenedor-noticias" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; padding-bottom: 50px;"></div>
   </section>
 
   <!-- Footer -->
@@ -72,8 +59,7 @@
     <p>&copy; 2025 Conae. Todos los derechos reservados.</p>
   </footer>
 
-  <!-- Script que carga las noticias -->
-  <script src="scripts/cargarNoticias.js"></script>
-  <script src="scripts/carruselDestacadas.js"></script>
+  <!-- Script de carga -->
+  <script src="scripts/mostrarNoticia.js"></script>
 </body>
 </html>
