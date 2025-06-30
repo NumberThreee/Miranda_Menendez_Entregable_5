@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Área Privada</title>
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body class="layout-flex">
+
+ 
+  <header class="main-header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/conae_logo_2.png" alt="Logo CONAE" class="site-logo">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-links">
+                
+                <li class="menu-desplegable">
+                    <a href="#" class="boton-desplegable">ESPACIO EXTERIOR</a>
+                    <div class="contenido-desplegable">
+                        <a href="#">Acceso al Espacio</a>
+                        <a href="#">Misiones</a>
+                        <a href="noticias.html">Noticias</a>
+                    </div>
+                </li>
+                <li class="menu-desplegable">
+                    <a href="#" class="boton-desplegable">RECURSOS</a>
+                    <div class="contenido-desplegable">
+                        <a href="#">Plan Espacial</a>
+                        <a href="#">Aplicaciones</a>
+                        <a href="#">Productos Saocom</a>
+                        <a href="#">Servicios</a>
+                        <a href="#">Educacion y Capacitacion</a>
+                        
+                    </div>
+                </li>
+                <li><a href="#" class="live-btn">LIVE <span class="dot"></span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <main class="privado-contenido">
+    <h2 id="saludoUsuario"></h2>
+    <p>Esta es nuestra Area Restringida - Solo vos podes ver lo que tenemos aca.</p>
+    <button class="btn-primary" onclick="cerrarSesion()">Cerrar sesión</button>
+ </main>
+
+  
+  <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">Institución</a>
+                <a href="#">Contacto</a>
+            </div>
+            <div class="footer-social">
+                <span>Redes</span>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                        <img src="images/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" aria-label="X (Twitter)">
+                        <img src="images/x.png"X (Twitter)">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+                        <img src="images/facebook.png" alt="Facebook">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 CONAE. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+  <script src="scripts/privado.js"></script>
+</body>
+</html>
