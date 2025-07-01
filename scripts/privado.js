@@ -14,3 +14,11 @@ function cerrarSesion() {
   localStorage.removeItem("nombreUsuario");
   window.location.href = "index.html";
 }
+
+
+document.getElementById("formInterno").addEventListener("submit", function (e) {
+  e.preventDefault();
+  document.getElementById("mensajeInterno").textContent = "✅ Novedad registrada correctamente.";
+  this.reset();
+});
+

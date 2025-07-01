@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Área Privada</title>
+  <meta charset="UTF-8" />
+  <title>Búsqueda Avanzada</title>
   <link rel="stylesheet" href="estilo.css" />
 </head>
 <body class="layout-flex">
 
- 
   <header class="main-header">
         <div class="logo">
             <a href="index.html">
@@ -26,14 +25,14 @@
                     </div>
                 </li>
                 <li class="menu-desplegable">
-                    <a href="#" class="boton-desplegable">RECURSOS </a>
+                    <a href="#" class="boton-desplegable">RECURSOS  </a>
                     <div class="contenido-desplegable">
                         <a href="#">Plan Espacial</a>
                         <a href="#">Aplicaciones</a>
                         <a href="#">Productos Saocom</a>
                         <a href="#">Servicios</a>
                         <a href="#">Educacion y Capacitacion</a>
-                        
+                        <a href="login.html"> Area Restingida </a>
                     </div>
                 </li>
                 <li><a href="#" class="live-btn">LIVE <span class="dot"></span></a></li>
@@ -42,23 +41,31 @@
     </header>
 
   <main class="privado-contenido">
-    <h2 id="saludoUsuario"></h2>    
-    <p>Esta es nuestra Area Restringida - Solo vos podes ver lo que tenemos aca.</p>
-    <div class="contenedor">
-        <h1>Carga Interna de Novedades</h1>
-        <form id="formInterno">
-            <input type="text" placeholder="Título de la novedad" required />
-            <textarea placeholder="Descripción detallada..." rows="6" required></textarea>
-            <input type="date" required />
-            <button type="submit" class="btn-primary">Registrar</button>
+    
+
+    <div class="formulario-avanzado">
+        <h2>Búsqueda Avanzada</h2>
+
+        <form id="form-avanzado">
+            <input type="text" id="titulo" placeholder="Título">
+            <input type="text" id="categoria" placeholder="Categoría">
+            <input type="text" id="fecha" placeholder="Fecha (ej: 2024-08-01)">
+            <input type="text" id="autor" placeholder="Autor">
+            <input type="text" id="descripcion" placeholder="Palabras clave en la descripción">
+            
+            <div class="botones-formulario">
+            <button type="submit" class="btn-primary">Buscar</button>
+            <button type="button" id="btn-volver" class="btn-primary">Volver</button>
+
+            </div>
         </form>
-        <p class="form-mensaje" id="mensajeInterno"></p>
     </div>
 
-    <button class="btn-primary" onclick="cerrarSesion()">Cerrar sesión</button>
- </main>
+<div id="resultados-avanzados" class="grid-noticias"></div>
 
-  
+    
+  </main>
+
   <footer class="main-footer">
         <div class="footer-content">
             <div class="footer-links">
@@ -85,6 +92,6 @@
         </div>
     </footer>
 
-  <script src="scripts/privado.js"></script>
+  <script src="scripts/busqueda-avanzada.js"></script>
 </body>
 </html>

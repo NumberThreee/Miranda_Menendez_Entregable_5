@@ -907,6 +907,111 @@ body.layout-flex {
   text-decoration: underline;
 }
 
+#formInterno {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+#formInterno input,
+#formInterno textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2a2e38;
+  color: white;
+  font-size: 16px;
+}
+
+#formInterno textarea::placeholder {
+  color: #ccc;
+}
+
+.form-mensaje {
+  margin-top: 15px;
+  text-align: center;
+  color: #00cc66;
+  font-weight: bold;
+}
+
+.busqueda-avanzada {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.busqueda-avanzada input {
+  flex: 1;
+  max-width: 600px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+}
+
+.boton-avanzado {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.boton-avanzado:hover {
+  background-color: #0056b3;
+}
+
+
+.formulario-avanzado {
+  max-width: 800px;
+  margin: 60px auto 30px auto;
+  background-color: #1c1f26;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+  color: white;
+}
+
+.formulario-avanzado form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario-avanzado input {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #2a2e38;
+  color: white;
+}
+
+.formulario-avanzado button {
+  align-self: flex-start;
+}
+
+.botones-formulario {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.botones-formulario .btn-primary {
+  min-width: 120px;
+  text-align: center;
+}
+
+
+
+
+
+
+
 
 
 
